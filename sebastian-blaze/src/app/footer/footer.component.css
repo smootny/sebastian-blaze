@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 80vh;
+    text-align: center;
+  }
+
+  p {
+    font-size: 26px;
+    font-family: "Rajdhani", serif;
+    font-weight: 300;
+   
+  }

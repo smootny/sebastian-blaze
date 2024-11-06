@@ -1,8 +1,8 @@
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
-    gap: 20px;
+    gap: 150px;
     text-align: center;
     height: 100dvh;
     min-height: 500px;
@@ -10,7 +10,7 @@
 
 
 .hero{
-    max-width: 300px;
+    max-width: 540px;
 }
 
 span {
@@ -26,6 +26,11 @@ span {
     }
 }
 
+image-container {
+    display: flex;
+
+}
+
 a {
     width: fit-content;
     align-self: center;
@@ -39,8 +44,8 @@ button {
     width: 240px;
     height: 50px;
     font-size: 24px;
-    font-weight: 100;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Rajdhani", serif;
+    font-weight: 400;
 
 }
 
@@ -49,7 +54,8 @@ h1, h2 {
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
+    box-shadow: 0 0 0 2px #16C79A, 0 10px 60px 0 rgba(0, 0, 0, 0.1);
 }
 
 button:active {
@@ -60,10 +66,11 @@ button:active {
 
 .description {
     max-width: 24ch;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 100;
+    font-family: "Rajdhani", serif;
+  font-weight: 300;
+  font-style: normal;
     font-size: 30px;
-    font-style: normal;
+
 }
 
 .info {
@@ -73,5 +80,5 @@ button:active {
     gap:20px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    
 }

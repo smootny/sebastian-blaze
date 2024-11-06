@@ -8,13 +8,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  height: 100vh;
+  height: 80vh;
 }
 
 .title {
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
+    font-size: 45px;
 }
 
 img {
@@ -115,6 +116,7 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .card-meta {  
@@ -146,10 +148,21 @@ img {
     font-weight: 400;
     text-decoration: none;
     color: black;
+ 
+}
+
+.images {
+    display: flex;
+    width: 50px;
+    gap: 10px;
 }
 
   
-
+p {
+  font-size: 20px;
+  font-family: "Rajdhani", serif;
+  font-weight: 100;
+}
 
 /* @media (width <= 800px) {
     .container {
