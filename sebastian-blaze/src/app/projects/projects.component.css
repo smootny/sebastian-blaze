@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
 
-*, *::after, *::before {
-  box-sizing: border-box;
+
+.projects {
+  height: 100dvh;
 }
-
 .container {
   display: flex;
   justify-content: center;
   gap: 20px;
-  height: 80vh;
 }
 
 .title {
@@ -16,16 +14,17 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-size: 45px;
+    padding-bottom: 1rem;
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
   display: block;
 }
 
 .card-list {
   width: 90%;
-  max-width: 400px;
+  max-width: 360px;
 }
 
 .card {
@@ -46,7 +45,9 @@ img {
 
 .card-image {
   border-radius: 10px;
-  overflow: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .card-header {
@@ -110,9 +111,9 @@ img {
 }
 
 .card-footer {
-  margin-top: 1.25rem;
+  margin-top: 0.7rem;
   border-top: 1px solid #ddd;
-  padding-top: 1.25rem;
+  padding-top: 1rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;

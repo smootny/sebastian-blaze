@@ -1,3 +1,7 @@
+.container {
+    height: 100dvh;
+}
+
 .title {
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
@@ -9,9 +13,10 @@
 .skills {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-    height: 80vh;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-top: 120px;
 }
 
 .icons {
@@ -25,8 +30,103 @@ img {
 }
 
 hr {
-    width: 400px;
+    width: 600px;
     height: 1px;
     border: none;
-    background-color: black;
+    background-color: #16C79A;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #030712;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+.itemLeft,
+.itemRight {
+  width: 200px;
+  height: 100px;
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.itemLeft {
+  left: max(calc(200px * 5), 100%);
+  animation-name: scrollLeft;
+}
+
+.itemRight {
+  right: max(calc(200px * 5), calc(100% + 200px));
+  animation-name: scrollRight;
+}
+
+.item1 {
+  animation-delay: calc(30s / 5 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 5 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 5 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 5 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 5 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 5 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 5 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
