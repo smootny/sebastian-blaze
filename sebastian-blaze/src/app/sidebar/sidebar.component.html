@@ -1,0 +1,9 @@
+<nav class="side-navbar">
+    <ul>
+      <li *ngFor="let section of sections" [class.active]="currentSection === section.id">
+        <a (click)="scrollToSection(section.id)" tabindex="0">
+          <span class="dot"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>

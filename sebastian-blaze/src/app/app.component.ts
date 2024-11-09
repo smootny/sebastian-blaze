@@ -4,6 +4,7 @@ import { HeroComponent } from './hero/hero.component';
 import { ProjectsComponent } from "./projects/projects.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { FooterComponent } from "./footer/footer.component";
+import { SideNavbarComponent } from "./sidebar/sidebar.component";
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
     HeroComponent,
     ProjectsComponent,
     SkillsComponent,
-    FooterComponent
+    SideNavbarComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

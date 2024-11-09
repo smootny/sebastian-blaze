@@ -21,7 +21,7 @@
 .hero {
     max-width: 540px;
     width: 100%; /* Ensure the image fills the container */
-    animation: slideInFromRight 1s ease-out forwards;
+    animation: slideInFromRight 1.3s ease-out forwards;
     opacity: 0;
     transform: translateX(100%); /* Start fully translated to the right */
 }
@@ -96,6 +96,7 @@ button {
     font-size: 24px;
     font-family: "Rajdhani", serif;
     font-weight: 400;
+    cursor: grab;
 }
 
 button:hover {

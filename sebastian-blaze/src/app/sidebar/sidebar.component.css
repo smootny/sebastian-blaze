@@ -1,0 +1,89 @@
+/* src/app/side-navbar/side-navbar.component.css */
+
+.side-navbar {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .side-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-navbar li {
+    margin: 15px 0;
+  }
+  
+  .side-navbar a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+  
+  .side-navbar a:hover .dot {
+    background-color: #000;
+    transform: scale(1.1);
+  }
+  
+  /* .side-navbar a:focus .dot {
+    outline: 2px solid #000;
+  } */
+  
+  .side-navbar .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .side-navbar li.active .dot {
+    background-color: #000;
+    animation: pulse 4s infinite;
+  }
+  
+  /* Pulse Animation for Active Dot */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      background-color: #000;
+    }
+    50% {
+      transform: scale(1.1);
+      background-color: #16C79A;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #000;
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .side-navbar {
+      left: 10px;
+    }
+  
+    .side-navbar .dot {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .side-navbar {
+      display: none; /* Hide on very small screens */
+    }
+  }
+  
