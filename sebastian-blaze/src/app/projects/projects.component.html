@@ -1,40 +1,40 @@
 <section class="projects">
     <h1 class="title">Projects</h1>
     <div class="container">
-        <div class="card-list" (click)="openLink('https://github.com/smootny/FlexFlowFreeze')">
+        <!-- Project 1: Trening Tools -->
+        <div class="card-list" 
+             [class.active]="isActive(0)"
+             (swiperight)="previousProject()"
+             (swipeleft)="nextProject()"
+             (click)="setActiveProject(0)">
             <article class="card">
                 <figure class="card-image">
-                    <img src="assets/images/trening-tools.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                    <img src="assets/images/trening-tools.png" alt="Trening Tools Image" />
                 </figure>
                 <div class="card-header">
-                    <p>Trening Tools - simple tools for daily trening and diet use.</p>
+                    <p>Trening Tools - simple tools for daily training and diet use.</p>
                 </div>
                 <div class="card-footer">
-                    <p class="tech-stack">Tech stack: </p>
-                              <span class="images">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-              
-    
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-    
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-                                            
-                                    
-              
-                                  
-    
-                                </span>
-                
-                   
+                    <p class="tech-stack">Tech stack:</p>
+                    <span class="images">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                    </span>
                 </div>
             </article>
         </div>
-        
-        <div class="card-list" (click)="openLink('https://github.com/smootny/gaweloft')">
+
+        <!-- Project 2: Gaweloft -->
+        <div class="card-list" 
+             [class.active]="isActive(1)"
+             (swiperight)="previousProject()"
+             (swipeleft)="nextProject()"
+             (click)="setActiveProject(1)">
             <article class="card">
                 <figure class="card-image">
-                    <img src="assets/images/gaweloft1.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                    <img src="assets/images/gaweloft1.png" alt="Gaweloft Image" />
                 </figure>
                 <div class="card-header">
                     <p>Gaweloft - interior designer landing page for portfolio.</p>
@@ -42,48 +42,48 @@
                 <div class="card-footer">
                     <p class="tech-stack">Tech stack:</p>
                     <span class="images">
-                       
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-              
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-    
-    
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-                                
-                        
-    
-                      
-    
                     </span>
                 </div>
             </article>
         </div>
-        
-        <div class="card-list" (click)="openLink('https://github.com/smootny/WhoPays')">
+
+        <!-- Project 3: Who Pays?! -->
+        <div class="card-list" 
+             [class.active]=" isActive(2)"
+             (swiperight)="previousProject()"
+             (swipeleft)="nextProject()"
+             (click)="setActiveProject(2)">
             <article class="card">
                 <figure class="card-image">
-                    <img src="assets/images/who-pays1.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                    <img src="assets/images/who-pays1.png" alt="Who Pays?! Image" />
                 </figure>
                 <div class="card-header">
                     <p>Who Pays?! - a fun decision-making game.</p>
                 </div>
                 <div class="card-footer">
-                    <p class="tech-stack">Tech stack: </p>
-                        <span class="images">  
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-    
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-    
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-      
-                          
-    
-                        </span>
-                  
+                    <p class="tech-stack">Tech stack:</p>
+                    <span class="images">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                    </span>
                 </div>
             </article>
         </div>
     </div>
-    
+
+    <!-- Dot Navigation -->
+     <div class="navigation-container">
+    <div class="dot-navigation">
+        <span class="dot" 
+              *ngFor="let project of [0, 1, 2]; let i = index" 
+              [class.active]="isActive(i)" 
+              (click)="setActiveProject(i)">
+        </span>
+    </div>
+</div>
 </section>

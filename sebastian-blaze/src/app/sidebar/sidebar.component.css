@@ -70,7 +70,7 @@
   }
   
   /* Responsive Adjustments */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .side-navbar {
       left: 10px;
     }
@@ -79,9 +79,10 @@
       width: 12px;
       height: 12px;
     }
-  }
+  } */
   
-  @media (max-width: 480px) {
+  @media only screen 
+  and (max-width: 812px)  { 
     .side-navbar {
       display: none; /* Hide on very small screens */
     }
