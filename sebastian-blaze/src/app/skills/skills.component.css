@@ -119,6 +119,7 @@ body {
   animation-delay: calc(30s / 5 * (5 - 5) * -1);
 }
 
+/* iPhone 13+ */
 @media (max-width: 428px) {
 .wrapper {
   width: 90%;
@@ -143,6 +144,7 @@ hr {
 }
 }
 
+/* Big screens+ */
 @media (min-width: 1901px) {
 
   .title {

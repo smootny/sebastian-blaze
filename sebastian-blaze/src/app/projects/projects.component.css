@@ -193,7 +193,7 @@ p {
 }
 
 
-
+/* iPhone 13+ */
 @media (max-width: 428px) {
   .container {
     display: flex;
@@ -319,6 +319,7 @@ p {
     }
 }
 
+/* Big screens+ */
 @media (min-width: 1901px) {
   .container{
     gap: 100px;
