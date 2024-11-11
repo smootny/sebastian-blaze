@@ -1,5 +1,3 @@
-
-
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
@@ -11,8 +9,8 @@ import { Component } from '@angular/core';
   imports: [NgFor]
 })
 export class ProjectsComponent {
-  activeProjectIndex = 0; 
-  projectCount = 3; 
+  activeProjectIndex = 0;
+  projectCount = 3;
 
   setActiveProject(index: number) {
     this.activeProjectIndex = index;
