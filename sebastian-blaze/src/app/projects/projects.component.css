@@ -1,26 +1,35 @@
-
-
 .projects {
   height: 100dvh;
 }
 .container {
+  padding-top: 80px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
 }
 
 .title {
-    text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 3rem;
-    letter-spacing: 5px;
-    padding: 1rem 0 1rem 0;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  padding: 2rem 0 1rem 0;
 }
 
 img {
-  max-width: 90%;
+  max-width: 100%;
   display: block;
+}
+
+.code {
+  width: 20px;
+  height: 20px;
+}
+
+.code-img {
+  width: 20px;
+  height: 20px;
 }
 
 .card-list {
@@ -154,9 +163,9 @@ img {
 }
 
 .images {
-    display: flex;
-    width: 50px;
-    gap: 10px;
+  display: flex;
+  width: 40px;
+  gap: 10px;
 }
 
   
@@ -165,6 +174,24 @@ p {
   font-family: "Rajdhani", serif;
   font-weight: 100;
 }
+.code-img {
+  position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    bottom: 21px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.1rem;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.code-img:hover {
+  border: 2px solid #16C79A;
+  background-color: #9BF09F;
+}
+
 
 
 @media (max-width: 428px) {
@@ -178,7 +205,7 @@ p {
   }
 
   .title {
-    padding: 0;
+    padding: 1rem 0 0 0;
     font-size: 2.6rem;
   }
 
@@ -250,9 +277,49 @@ p {
   .dot.active {
     background-color: #16C79A;
   }
+
+  .code-img {
+    position: absolute;
+    bottom: 16px;
+    right: 19px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.1rem;
+  }
+
+  .code-img:hover {
+    border: 2px solid #16C79A;
+    background-color: #9BF09F;
+  }
+
+  .code-img {
+
+    background-color: #000;
+    animation: pulse 4s infinite;
+
+  }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        background-color: #fff;
+        border: 1px solid black;
+      }
+      50% {
+        transform: scale(1);
+        background-color: #9BF09F;
+        border: 2px solid #16C79A;
+      }
+      100% {
+        transform: scale(1);
+        background-color: #fff;
+        border: 1px solid black;
+      }
+    }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1901px) {
   .container{
     gap: 100px;
     padding-top: 10rem;
@@ -274,5 +341,22 @@ p {
 
   p {
     font-size: 2rem;
+  }
+
+  .code-img {
+    position: absolute;
+    right:30px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.1rem;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px black);
+  }
+
+  .code-img:hover {
+    border: 2px solid #16C79A;
+    background-color: #9BF09F;
   }
 }

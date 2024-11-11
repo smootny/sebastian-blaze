@@ -3,22 +3,22 @@
 }
 
 .title {
-    text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 3rem;
-    letter-spacing: 5px;
-    padding: 1rem 0 1rem 0;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  padding: 2rem 0 1rem 0;
 }
 
 
 .skills {
-    display: flex;
+  display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .icons {
@@ -143,7 +143,7 @@ hr {
 }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1901px) {
 
   .title {
     font-size: 5rem;
