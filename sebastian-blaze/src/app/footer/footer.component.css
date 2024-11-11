@@ -8,8 +8,15 @@
   }
 
   p {
-    font-size: 26px;
+    font-size: 1rem;
     font-family: "Rajdhani", serif;
     font-weight: 300;
    
+  }
+
+  @media (min-width: 1366px) {
+
+    .container {
+      padding-top: 18rem;
+    }
   }
