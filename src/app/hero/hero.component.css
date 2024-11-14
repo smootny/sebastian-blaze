@@ -136,6 +136,13 @@ h1, h2 {
     .container {
         flex-direction: column;
         gap: 50px;
+        height: 100%;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .info {
+        font-size: 22px;
     }
     
     .image-container {
