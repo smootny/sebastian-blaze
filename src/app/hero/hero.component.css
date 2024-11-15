@@ -140,10 +140,6 @@ h1, h2 {
         padding-top: 2rem;
         margin-bottom: 2rem;
     }
-
-    .info {
-        font-size: 22px;
-    }
     
     .image-container {
         display: flex;
@@ -155,6 +151,10 @@ h1, h2 {
     .hero {
         max-width: 70%;
         transform: translateX(100%);
+    }
+
+    .description {
+        font-size: 22px;
     }
 }
 
