@@ -19,7 +19,7 @@ h2 {
 .image-container {
     display: flex;
     width: 540px;
-    overflow: hidden;
+    /* overflow: hidden; */
 } 
 
 .hero {

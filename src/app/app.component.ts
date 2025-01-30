@@ -5,16 +5,16 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { FooterComponent } from "./footer/footer.component";
 import { SideNavbarComponent } from "./sidebar/sidebar.component";
+import { ProfileImageComponent } from './profile-image/profile-image.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     HeroComponent,
     ProjectsComponent,
     SkillsComponent,
-    SideNavbarComponent
+    SideNavbarComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
